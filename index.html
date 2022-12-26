@@ -1,65 +1,48 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Form</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
-    <div class="container">
-        <!-- form heading -->
-        <h1>Regitration Form</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To Do List</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-        <form class="form" id="registration">
-            <div class="form-field">
-                <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" placeholder="Enter First Name" autocomplete="off">
-                <small></small>
-            </div>
-            
-            <div class="form-field">
-                <label for="lname">Last Name:</label><br>
-                <input type="text" id="lname" placeholder="Enter Last Name" autocomplete="off">
-                <small></small>
-            </div>
-            
-            <div class="form-field">
-                <label for="email">Notification Email:</label><br>
-                <input type="text" id="email" placeholder="Enter Email" autocomplete="off">
-                <small></small>
-            </div>
-            
-            <div class="form-field">
-                <label for="age">Age:</label><br>
-                <input type="number" id="age" placeholder="Enter Age" autocomplete="off">
-                <small></small>
-            </div>
-            
-            <div class="form-field">
-                <label for="phnumber">Contact No:</label><br>
-                <input type="number" id="phnumber" placeholder="03XXXXXXXXX" autocomplete="off">
-                <small></small>
-            </div>
-            
-            <div class="form-field">
-                <label for="password1">Password:</label><br>
-                <input type="text" id="password1" placeholder="Enter Password" autocomplete="off">
-                <small></small>
-            </div>
-            
-            <div class="form-field">
-                <label for="password2">Re-enter Password:</label><br>
-                <input type="text" id="password2" placeholder="Re-enter Password" autocomplete="off">
-                <small></small>
-            </div>
-            
-            <div class="submit-button">
-                <button type="submit" id="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+	<body>
+		<div class="container">
+			<h1>To Do List</h1>
 
-    <script src="app.js"></script>
-</body>
+			<form class="input">
+				<input
+					type="text"
+					placeholder="What's on your Mind..."
+					class="user_input" />
+			</form>
+
+			<ul class="tasks_list">
+				<!-- <li>
+                <div class="list">
+                    <input type="checkbox" class="tick">
+                
+                    <span class="text">Pay Bills</span>
+                
+                    <button class="edit">Edit</button>
+                
+                    <button class="delete">Delete</button>
+                </div>
+            </li> -->
+
+				<!-- <li>
+                <div class="update_list">
+                    <input type="text" class="update_text">
+            
+                    <button class="update">Update</button>
+            
+                    <button class="delete">Delete</button>
+                </div>
+            </li> -->
+			</ul>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
 </html>
